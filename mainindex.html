@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test Website</title>
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="swiper-bundle.min.css"/>
+<script src="https://kit.fontawesome.com/122bc34336.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Products');
+    data.addColumn('number', 'Amount moved annually');
+    data.addRows([
+      ['Gaming', 15],
+      ['Audio Product', 25],
+      ['Smartphones', 40],
+      ['Phone Appliances', 20]
+    ]);
+
+    var options = {
+      title: 'Distribution',
+      titleTextStyle: {
+        color: 'white'
+      },
+      legendTextStyle: {
+        color: 'white'
+      },
+      pieHole: 0.4,
+      backgroundColor: 'transparent',
+      width: '100%',
+      height: '400px', 
+      is3D:true,
+    };
+            
+                var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+                chart.draw(data, options);
+
+      $(window).on("throttledresize", function (event) {
+        var options = {
+          width: '100%',
+          height: '100%'
+        };
+
+        var data =google.visualization.arrayToDataTable([]);
+        drawChart(data, options);
+      });
+      }
+            </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="mainindex.css">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
+</script>
+</head>
+<body>
+
+<header>
+  <div class="container" id="home">
+    <h2><span class="compass">Optimus</span> Tr<span>A</span>de</h2>
+    <div class="langWrap">
+      <a href="#" language='russian' id="firstLink">RU</a>
+      <a href="#" language='english' class="active">EN</a>
+    </div>
+     <nav class="navbar">
+      <ul>
+        <li><a href="#home" data-original-text="home">Домой</a></li>
+        <li><a href="#products" data-original-text="products">Продукты</a></li>
+        <li><a href="#about" data-original-text="about">О нас</a></li>
+        <li><a href="#team" data-original-text="team">Контакты</a></li>
+        <li><a href="#jobs" data-original-text="jobs">Pаботы</a></li>
+</ul>
+</nav>
+
+
+  <div class="cart-wrapper">
+    <div class="cart-box">
+      <a href="cart.html">
+      <div class="cart-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+    </a>
+      <div class="totalQuantity">0</div>
+  </div>
+  <div class="cart">
+  <h6>CART</h6>
+  <div class="listCart">
+  <div class="item">
+  <img id="myImage" src="">
+  <div class="content">
+  <div class="name">Product Name</div>
+  <div class="price">$50/1 item</div>
+  </div>
+  <div class="quantity">
+  <button>-</button>
+  <span class="value">3</span>
+  <button>+</button>
+  </div>
+  </div>
+</div>
+
+
+  <div class="buttons">
+    <div class="checkout">
+     <a href="checkout.html">CHECKOUT</a>
+    </div>
+  </div>
+  </div>
+ 
+
+<button class="hamburger">
+<div class="bar"></div>
+</button>
+
+<nav class="mobile-nav">
+  <ul>
+    <li><a href="#home" data-original-text="home" >Домой</a></li> 
+    <li><a href="#products" data-original-text="products">Продукты</a></li>
+    <li><a href="#about" data-original-text="about">О нас</a></li>
+    <li><a href="#team" data-original-text="team">Контакты</a></li>
+    <li><a href="#jobs" data-original-text="jobs">Pаботы</a></li>
+  </ul>
+  </nav>
+</div>
+
+<div class="box-wrapper">
+<div class="box-2">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div> 
+</div>
+
+<div class="box-wrapper">
+  <div class="box-3">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div> 
+  </div>
+
+  <div class="box-wrapper">
+    <div class="box-4">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div> 
+    </div>
+
+<section class="hidden" section id="">
+  <div class="container-2">
+<div class="content-2"> 
+  <h1 class="main-title">ДОБРО ПОЖАЛОВАТЬ</h1>
+  <p>Дистрибьютор широкого профиля. Обладая логистическими возможностями, мы продвинем ваш бренд.</p>
+</div>
+</div>
+</div>
+</section>
+</header>
+
+  <!-- Second Section -->
+  <header>
+    <section class="hero" id="about">
+      <div class="container-3">
+          <div class="gallery">
+      <img src="images/truck.jpg" alt="truck" class="img1">
+      <img src="images/truck.jpg" alt="truck2" class="img2">
+      <section class="hidden">
+      <div class="content-3">
+        <h3>О HAC</h3> 
+      <h4>ООО «ОПТИМУС ТРЕЙД» - дистрибьютор широкого профиля, который имеет квалифицированный персонал сотрудников, работающих с ключевыми сетями в Республике Беларусь, такими как: MTS, Triovist, Electrisila, Ostrov Chistoty, Gadget Trade и другими. У нас есть возможность продвигать ваш бренд не только в Республике Беларусь, но и в других странах СНГ. Мы имеем ключевые факторы в финансировании, маркетинге и активных продажах электроники и бытовой техники ведущих брендов (Apple, Realme, Anker, Philips, Bosch, Braun) в Республике Беларусь. У нас есть все логистические возможности и полная поддержка гарантий. Нашей силой является профессионализм и партнерство с производителями. Наша финансовая мощность и технологии позволяют нам смотреть в будущее с уверенностью. Мы готовы развивать как новые рынки, так и новые группы товаров. Мы следуем за тенденциями рынка и понимаем потребности поставщиков. Мы доказали это через годы стабильной работы и развития.</h4>
+    </div>
+  </div>
+  <section class="hidden">
+  <div class="about-container">
+    <div class="about-content">
+      <h4>Огромный опыт проведения промо- и трейд-маркетинговых мероприятий.</h4>
+      <p>OPTIMUS TRADE LLC уделяет особое внимание построению финансово прозрачной структуры, развитию обширной сети собственных розничных магазинов на территории Республики Беларусь, благодаря которой сможет обеспечить высококачественное сервисное и логистическое обслуживание в каждом регионе.</p>
+    <a href="#jobs" class="read-more">Read More</a>
+  </div>
+</div>
+  </div>
+</section>
+  </section>
+
+  <section class="inner">
+    <div class="inner-container" >
+      <div class="inner__wrapper">
+    <div class="inner">
+      <p>Топ-менеджмент компании работает на этом рынке более 10 лет и имеет колоссальный опыт вывода продукта на рынок.</p>
+    </div>
+    <div class="inner">
+      <p>Организуем систему продаж и логистики. Естественно, всего этого мы не смогли бы добиться без поддержки производителя, его заинтересованности и уверенности в системном подходе к продажам. </p>
+    </div>
+    <div class="inner">
+      <p>Мы уверены, что пришло время применить индивидуальный подход к меняющейся тенденции продаж и представления продукции, изменившимся требованиям владельца бренда..</p>
+    </div>
+  </div>
+</div>
+</section>
+    </header>
+
+    <!-- Third Section -->
+    <section class="hero-2" section id="products">
+      <div class="main_title">
+        <div class="box-1">
+<p>ООО «ОПТИМУС ТРЭЙД» уделяет oсoбoe внимание построению финансово прозрачной структуры, развитию обширной сети собственных розничных магазинов в Республике Беларусь, с помощью которых сможет обеспечить качественный сервис и логистику в каждом регионе. У нас есть ключевые факторы в финансировании, маркетинге и активных продажах электроники и бытовой техники ведущих брендов (Apple, Realme, Anker, Philips, Bosch, Braun)</p>
+</div>
+</div>
+
+<div class="images">
+      <div class="first" id="first">
+        <img src="images/JBLJBL.jpg" alt="">
+      </div>
+      <div class="second" id="second">
+        <img src="images/sonysony.jpg" alt="">
+      </div>
+      <div class="third" id="third">
+        <img src="images/Marshalpic.jpeg" alt="">
+      </div>
+      <div class="forth" id="forth">
+        <img src="images/Apple-iPhone-15.jpg" alt="">
+      </div>
+    </div>
+</section>
+
+<section class="contactus" section id="team">
+  <div class="left">
+      <div class="heading-3">Наши контакты</div>
+      <div class="paragraph-wrapper">
+      <i class="fa-solid fa-phone" style="color: #d6b9df;"></i>
+      <p>Отдел продаж</p>
+      <p>+375 44 567-04-88</p>
+      <p>+375 29 555-55-55</p>
+    </div>
+      <div class="bottom-left">
+          <i class="fa-solid fa-envelope" style="color: #c0b5e3;"></i>
+      <p>По вопросам приобретения товара по безналичному расчету обращайтесь в отдел продаж.</p>
+      <div class="paragraph-bottom">
+      <p>sales@optimustrade.by</p>
+      <p>Сотрудничество:</p>
+      <p>info@optimustrade.by</p>
+      <p>220020, Республика Беларусь, г. Минск, пр-т Победителей, д. 103, оф. 1104</p>
+    </div>
+  </div>
+</div>
+  <div class="right">
+  <div class="heading-3">Как найти нас</div>
+  <div class="map-wrapper">
+    <iframe src="https://yandex.com/map-widget/v1/-/CCU86XsKlD/?um=constructor%3A8b3b19e0a5c7e0f5eab9f6ed8057a5e3d9b7e6a5eab9f6ed8057a5e3d9b7e6a5&amp;source=constructor" width="600" height="100%" frameborder="0"></iframe>
+  </div>
+</div>
+</section>
+
+<section class="benefits-container">
+  <div class="benefits">
+    <div class="benefit-item">
+    <i class="fa-solid fa-file-lines"></i>
+    <p>Собственный склад и система кросс-докинга.</p>
+  </div>
+  <div class="benefit-item">
+    <i class="fa-solid fa-handshake"></i>
+    <p>Широкий круг партнеров во всех каналах продаж.</p>
+  </div>
+  <div class="benefit-item">
+    <i class="fa-solid fa-truck"></i>
+    <p>Качественное и оперативное планирование поставок через систему «одного окна».</p>
+  </div>
+  <div class="benefit-item">
+    <i class="fa-solid fa-bolt"></i>
+    <p>Проведение совместных маркетинговых мероприятий.</p>
+  </div>
+  </div>
+</section>
+
+      <section class="wrapper" section id="jobs">
+        <div class="section-container">
+         <div class="heading-5">Cтруктура</div>
+        </div>
+         <div class="content5">
+           <img src="images/it.png" alt=""  class="image" />
+           <div class="heading-2">Продажи</div>
+           <p>Были сформированы профессиональные команды продаж. Внедрена система обучения торгового персонала и менеджмента.</p>
+         </div>
+         <div class="content5">
+           <img src="images/warehouse.png" alt=""  class="image" />
+         <div class="heading-2">Наша сила</div>
+           <p>Наша финансовая мощь и технологии позволяют нам с уверенностью смотреть в будущее. Мы готовы осваивать как новые рынки, так и новые группы товаров. Мы идем в ногу с тенденциями рынка и понимаем потребности поставщиков. Мы доказали это годами стабильной работы и развития.</p>
+         </div>
+         <div class="content5">
+           <img src="images/logistics.png" alt=""  class="image" />
+         <div class="heading-2">Дистрибуция</div>
+           <p>Высокий уровень дистрибуции по всем каналам сбыта на всех обслуживаемых территориях. Огромный опыт проведения промо- и трейд-маркетинговых мероприятий.</p> 
+          </div>
+        </section>
+
+          <section id="chart_wrap">
+          <div id="chart_div" class="chart">           
+          </div>
+          <div id="chart2_div" class="chart2">
+          </div>
+          <div id="chart3_div" class="chart3">
+          </div>
+        </section>
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+        google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawMultSeries);
+
+function drawMultSeries() {
+      var data = google.visualization.arrayToDataTable([
+        ['Product', '2022 Ravenue', '2023 Ravenue'],
+        ['Gaming', 8175000 * 0.15, 8008000 * 0.15],
+      ['Audio Product', 3792000 * 0.25, 3694000 * 0.25],
+      ['Smartphones', 2695000 * 0.40, 2896000 * 0.40],
+      ['Phone Appliances', 2099000 * 0.20, 1953000 * 0.20]
+      ]);
+
+      var options = {
+        title: 'The ravenue of the product',
+        chartArea: {width: '50%'},
+        backgroundColor: 'transparent',
+        titleTextStyle: {
+        color: 'white'
+      },
+      legendTextStyle: {
+        color: 'white'
+      },
+        hAxis: {
+          title: 'Total Ravenue',
+          minValue: 0,
+          titleTextStyle: {
+        color: 'white'
+      },
+      legendTextStyle: {
+        color: 'white'
+      },
+      textStyle: {
+      color: 'white'
+    },
+        },
+        vAxis: {
+          title: 'Product',
+          textStyle: {
+      color: 'white'
+    },
+    titleTextStyle: {
+        color: 'white'
+      },
+        }
+      };
+
+      var chart = new google.visualization.BarChart(document.getElementById('chart2_div'));
+      chart.draw(data, options);
+      $(window).on("throttledresize", function (event) {
+        var options = {
+          width: '100%',
+          height: '100%'
+        };
+
+        var data =google.visualization.arrayToDataTable([]);
+        drawChart(data, options);
+      });
+    }
+        </script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Electronics', 'Amount'],
+      ['Gaming', 15],
+      ['Audio Product', 25],
+      ['Smartphones', 40],
+      ['Phone Appliances', 20],
+   ]);
+
+    var options = {
+      title: 'Amount of distributed products',
+      isStacked: true,
+      bar: {groupWidth: "95%"},
+      legend: { position: 'none' },
+      backgroundColor: 'transparent',
+        titleTextStyle: {
+        color: 'white'
+      },
+      legendTextStyle: {
+        color: 'white'
+      },
+      hAxis: {
+          titleTextStyle: {
+        color: 'white'
+      },
+      legendTextStyle: {
+        color: 'white'
+      },
+      textStyle: {
+      color: 'white'
+    },
+        },
+        vAxis: {
+          textStyle: {
+      color: 'white',
+      format: '#,##0',
+    },
+    titleTextStyle: {
+        color: 'white'
+      },
+        }
+    };
+
+    var chart = new google.visualization.Histogram(document.getElementById('chart3_div'));
+    chart.draw(data, options);
+  }
+</script>
+      
+
+      <section class="companies" section id="companies">
+        <div class="companies-container" >
+          <div class="heading-6">Группа компаний:</div>
+          <div class="companies__wrapper">
+             <div class="companies__card" style="background-image: url(images/5thelement.png); background-size: 100%;">
+              <a href="https://5element.by/">
+                <div class="companies__btn"><button></button></div>
+            </a> 
+            </div> 
+             <div class="companies__card" style="background-image: url(images/MTS.png); background-size: 100%;">
+              <a href="https://shop.mts.by/phones/Apple/">
+                <div class="companies__btn"><button></button></div>
+            </a>
+            </div>       
+             <div class="companies__card" style="background-image: url(images/A1.png); background-size: 100%;">
+              <a href="https://www.a1.by/ru/">
+                <div class="companies__btn"><button></button></div>
+            </a>
+            </div> 
+          </div>
+        </div>
+      </section>
+
+      <div class="footer-container">
+        <div class="footer">
+          <div class="footer-heading footer-1">
+            <div class="heading">Наши контакты</div>
+            <a href="#about" data-original-text="about">О нас</a>
+            <a href="#team" data-original-text="team">Контакты</a>
+          </div>
+          <div class="footer-heading footer-2">
+            <div class="heading">Как найти нас</div>
+            <a href="#">YouTube</a>
+            <a href="#">LinkedIn</a>
+          </div>
+          <div class="footer-email-form">
+            <form action="https://api.web3forms.com/submit" method="POST">
+            <div class="heading">Напишите нам</div>
+            <input type="hidden" name="access_key" value="816dac1b-cd1c-431c-baa9-2faf1a961aab">
+            <input type="email" name="email" placeholder="enter your email" id="footer-email" required>
+            <input type="submit" value="Sign Up" id="footer-email-btn">
+          </form>
+          </div>
+        </div>
+ 
+      
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <script src="scroll.js"></script>
+ 
+
+ <!-- Swiper JS -->
+ <script src="swiper-bundle.min.js"></script>
+
+ <!-- JavaScript  -->
+   <script src="swiper.js"></script>
+  <script src="app.js"></script>
+<script src="test.js"></script>
+<script src= "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+<script src="gsap.js"></script>
+<script src="hamburger.js"></script>
+    <script src="language.js"></script>
+    <script src="server2.js"></script>
+    <script src="color.js"></script>
+
+</body>
+</html>
+
+
+  
+
+
+
+
+           

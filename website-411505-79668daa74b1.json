@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "website-411505",
+  "private_key_id": "79668daa74b1a4783512c6bb367fb2a70402d888",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCvwogFmsEqr65n\nnug9bMwZu4EU3qeMnEQO+ya6n8X0oFMXRy+s5biyqns0DlJ9zsl893g5Z6GF4Xyg\nAaDbNO97kzqjEsEGzHJHM5kCWnVerbWCWQdLs9bMQpThCWiva9FOiz8fyJOz8roO\nrVvI2oJW9kXfTGL4ArTwDd1i3DAxB/+wGHdtNtQ+aGqBcj066FCnSphvq4HjaBQH\nMYtepCSatu9S6kL+QTZ8ejNIGdZMA4hz1o1JWlLQ7h7cAWMH3Nk/tXwcMDbp2Pbt\ndpsvsxPC+HXSDUSvq9jIpSvtcwxCrp/P4EepQvg3YFP/hlPx3l/wH5joqXGlBeaS\npJQvAw81AgMBAAECggEAT3AAU2wk9zqM/Hd1ZuHIA69cAYc6uhIcrpqz3/B7o3tc\n4q4BbccsKdBku9vnS8ZNCea9l1Bv0BdgYN8riTfNL5CVFYRR6tU3p1e6RbaFysN/\nQIklg4EmSY6kRGugvXxhDvtfjel1XIUNs7mFvOuJsm0/mlOnfYmXptHVaCu1ukqu\nU4vR1Fg2JN2MCjBsQ8FOMjktvyjW/dWAPVTh7gW4lLjEcuOakehe4TUjUu6KZjwB\n4caBrOSolXKaoItf0LlPIViJBajD44dlZ/xfpgt+pqzZNgj7NJuXUsoflrV47asd\nISly1NBxBPAmv4OO7O8ImCf+h9cd1xz4hcMYL0shRwKBgQDxtZLmwHMwmyfhSukb\nNuHQ9d9rAcZgopCYcbJrAR1EHDrM+nLdnmKJv5BUlFTTh5jvLlI1OcUY4wHWVXH3\nhr9Om2S2uD16n3XjNfcFxbA9F7xz+sNRLIeMc5Bzu/dqRtiROyha1wMXGCDUgCuA\nHnSz+4mEHU3PPK60BUNfDylKjwKBgQC6JsVad3btUe+aQ1GI9zC/tpwS1lLWq4A6\n6HX1aGXlSFk7zjWRyxmQOaGgKc7TdZH4KCrd7qj+BHzDFgCj2W8GnpjSXrm8mn5P\nhDKKsqoV2X+jEz7lKiif2gx77fCj58+M/8UnGc70rnN/1CvWeqyx/9NFCOn+qoB4\nJk1O6Sg7+wKBgD88m/RXAUwEK8jbimUeVLIQwaUDT91UarQXevBX2EpLgG7ET2z/\n1RPo1F/sdszouvBIlCVsuc4rBf4HWMvDqyVrrkvHo/4C3hrVsY0HDXbOUPWe8563\nIbdzPKWq1a4uXtaQPZyWiC5wl5ZA+iCI10uHUZEJAaRoYeSjQ98I3mqtAoGAXemH\ncR+KASpwDcxeixHiJyYSUTKNMj3tgEqckAVuOqEoW5Kp1fa329onXy0YafgLfz2M\netCXsydCZg1on0Dn0Vgb0y302GC8zpLsCKsgQcurp/LirSx6uEKCP9eHqrkdLY4v\nwY00qp6EKH4664aSL27YACECI/eSvorcP65DHRcCgYEAwq2ji93SH7w4X600YKje\n2Gnlbc9TNAz80Ek1D3iJs3vrITQl5VvGDaMLfm3reLOElYXQmOQSgn1xOE0elnfe\nLVa2tjgfbyQ3Dh/2eVk/73eLcIHUy0D/RD65h0dXdlOKR4cWd1AgrUK9DUiktVKT\nt2Y183EwHwQx9vlGAN5xUb0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "optimus-trade@website-411505.iam.gserviceaccount.com",
+  "client_id": "105488750966504706706",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/optimus-trade%40website-411505.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

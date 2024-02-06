@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Major IV",
+        "price": 520,
+        "image": "images/major.png"
+    },
+    {
+        "id": 2,
+        "name": "Minor III",
+        "price": 220,
+        "image": "images/minor.png"
+    },
+    {
+        "id": 1,
+        "name": "JBL PartyBox",
+        "price": 520,
+        "image": "images/JBL.png"
+    },
+    {
+        "id": 2,
+        "name": "MK11 PS5",
+        "price": 220,
+        "image": "images/MK11 PS5.png"
+    }
+
+]   

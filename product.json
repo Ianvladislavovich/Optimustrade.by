@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "name": "JBL Party Box",
+        "price": 520,
+        "image": "images/JBL.png"
+    },
+    {
+        "id": 2,
+        "name": "Major IV",
+        "price": 220,
+        "image": "images/major.png"
+    },
+    {
+        "id": 3,
+        "name": "Minor III",
+        "price": 250,
+        "image": "images/minor.png"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "Sony Playstation 5",
+        "price": 420,
+        "image": "images/PS5.png"
+    },
+    {
+        "id": 5,
+        "name": "Iphone 14",
+        "price": 120,
+        "image": "images/Iphone14.png"
+    },
+    {
+        "id": 6,
+        "name": "MK11 PS5",
+        "price": 120,
+        "image": "images/MK11 PS5.png"
+    }
+]

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test Website</title>
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="swiper-bundle.min.css"/>
+<script src="https://kit.fontawesome.com/122bc34336.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Products');
+    data.addColumn('number', 'Amount moved annually');
+    data.addRows([
+      ['Gaming', 11],
+      ['Audio Product', 2],
+      ['Smartphones', 2],
+      ['Phone Appliances', 2]
+    ]);
+
+    var options = {
+      title: 'Distribution',
+      titleTextStyle: {
+        color: 'white'
+      },
+      legendTextStyle: {
+        color: 'white'
+      },
+      pieHole: 0.4,
+      backgroundColor: 'transparent',
+      width: '100%',
+      height: '400px', 
+      is3D:true,
+    };
+            
+                var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+                chart.draw(data, options);
+
+      $(window).on("throttledresize", function (event) {
+        var options = {
+          width: '100%',
+          height: '100%'
+        };
+
+        var data =google.visualization.arrayToDataTable([]);
+        drawChart(data, options);
+      });
+      }
+            </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="test.css">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
+</script>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h2><span class="compass">Optimus</span> Tr<span>A</span>de</h2>
+    <div class="langWrap">
+      <a href="#" language='english' class="active">EN</a>
+      <a href="#" language='russian'>RU</a>
+    </div>
+     <nav class="navbar">
+      <ul>
+        <li><a href="#home" data-original-text="home">Home</a></li>
+        <li><a href="#products" data-original-text="products">Products</a></li>
+        <li><a href="#about" data-original-text="about">About</a></li>
+        <li><a href="#team" data-original-text="team">Team</a></li>
+</ul>
+</nav>
+
+
+  <div class="cart-wrapper">
+    <div class="cart-box">
+      <a href="cart.html">
+      <div class="cart-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+    </a>
+      <div class="totalQuantity">0</div>
+  </div>
+  <div class="cart">
+  <h6>CART</h6>
+  <div class="listCart">
+  <div class="item">
+  <img id="myImage" src="">
+  <div class="content">
+  <div class="name">Product Name</div>
+  <div class="price">$50/1 item</div>
+  </div>
+  <div class="quantity">
+  <button>-</button>
+  <span class="value">3</span>
+  <button>+</button>
+  </div>
+  </div>
+</div>
+
+
+  <div class="buttons">
+    <div class="checkout">
+     <a href="checkout.html">CHECKOUT</a>
+    </div>
+  </div>
+  </div>
+ 
+
+<button class="hamburger">
+<div class="bar"></div>
+</button>
+
+<nav class="mobile-nav">
+  <ul>
+    <li><a href="#home" data-original-text="home" >Home</a></li> 
+    <li><a href="#about" data-original-text="about">AboutUs</a></li>
+    <li><a href="#jobs" data-original-text="jobs">Jobs</a></li>
+    <li><a href="#team" data-original-text="team">Contacts</a></li>
+  </ul>
+  </nav>
+</div>
+
+<div class="box-wrapper">
+<div class="box-2">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div> 
+</div>
+
+<div class="box-wrapper">
+  <div class="box-3">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div> 
+  </div>
+
+  <div class="box-wrapper">
+    <div class="box-4">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div> 
+    </div>
+
+<section class="hidden" section id="home">
+  <div class="container-2">
+<div class="content-2"> 
+  <h1 class="main-title"> WELCOME </h1>
+  <p>A distributor of a wide profile. Having logistics capabilities we'll promote your brand</p>
+</div>
+</div>
+</div>
+</section>
+</header>
+
+<section class="contactus">
+    <div class="left">
+      <div class="heading-3">Our Contacts</div>
+      <i class="fa-solid fa-phone" style="color: #d6b9df;"></i>
+      <p>+375 29 777 777 77</p>
+      <p>+375 29 777 777 77</p>
+      <p>+375 29 777 777 77</p>
+      <div class="bottom-left">
+        <i class="fa-solid fa-envelope" style="color: #c0b5e3;"></i>
+        <p>For questions regarding the purchase of goods by bank transfer, please contact the sales department.</p>
+        <p>m.purchasing@balticgsm.com</p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="heading-3">How to find Us</div>
+      <div class="map-wrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7900.537803981596!2d27.48803570610437!3d53.93451631988013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc50f95011eaf%3A0x74f213ee1e74976a!2sVictoria%20Olimp%20Hotel%20Minsk!5e0!3m2!1sen!2sus!4v1705928098664!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+  
+  <section class="benefits-container">
+    <div class="benefits">
+      <i class="fa-solid fa-file-lines"></i>
+      <p>In-house warehousing and cross-docking system.</p>
+      <i class="fa-solid fa-handshake"></i>
+      <p>A wide range of partners in all sales channels.</p>
+      <i class="fa-solid fa-truck"></i>
+      <p>Quality and efficient planning of deliveries through a one-stop-shop system.</p>
+      <i class="fa-solid fa-bolt"></i>
+      <p>Conducting joint marketing activities.</p>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+ <!-- JavaScript  -->
+ <script src="swiper.js"></script>
+ <script src="app.js"></script>
+<script src="test.js"></script>
+<script src= "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+<script src="gsap.js"></script>
+<script src="hamburger.js"></script>
+   <script src="language.js"></script>
+   <script src="server.js"></script>
+
+</body>
+</html>
